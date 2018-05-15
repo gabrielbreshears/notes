@@ -1,6 +1,6 @@
 # notes
 
-[MarkDown CheatSheet](/CheatSheet.md)
+[MarkDown CheatSheet](CheatSheet.md)
 ## Testing the GitHub integration
 
 
