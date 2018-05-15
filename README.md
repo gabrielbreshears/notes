@@ -1,6 +1,6 @@
 # notes
 
-[a relative link](CheatSheet.md)
+[a relative link](Markdown/CheatSheet.md)
 ## Testing the GitHub integration
 
 
