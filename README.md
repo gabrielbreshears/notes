@@ -1,3 +1,3 @@
 # notes
 
-- [Markdown CheatSheet](Markdown/CheatSheet.md)
+- [Markdown CheatSheet](csBasics/markdown.md)
