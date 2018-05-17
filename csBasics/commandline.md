@@ -10,7 +10,7 @@
 
 - `control` + `A` Jump to beginning
 - `control` + `E` Jump to end
-- `control` + `U` Deletes everyone
+- `control` + `U` Deletes everything
 
 
 ## Commands
@@ -26,7 +26,17 @@
 example: `mv test.txt text2.txt`
 - `rm` deleting a file
 - `cp` copy example: same as mv
-- `touch` create a file  
+- `touch` create a file (its real use it to change both modification and access times)
+- `head` displays first 10 lines of files
+- `tail` you know what this does
+- `wc` word count displays how many lines, words, and bytes (in that order!) of a text
+- `history` list all commands you entered.
+pro-tip: pipe history to less to make it searchable
+- `pwd` print working directory
+- `mkdir` makes a directory
+- `rmdir` removes empty directory
+- `rm -rf` deletes it all! BE CAREFUL with this one
+
 
 ## Useful Optional Forms Examples
 
@@ -44,8 +54,51 @@ Who can use it? `ls`, `rm`, etc
 Example:  `ls -l *.txt` => list long format of any file in the directory that ends in .txt
 
 `-a` show hidden files
+`-h` human readable
 
+### `head` + `tail`
 
+`-n 20` defaults shows first 10 lines `-n` allows you to specify
+
+## Pipes
+
+- `|` allow you to do pipe the result to another command
+- example `head foo.txt | wc`
+
+## Less is More
+`less` allows backward and forward moment through a file and can search
+
+`man` uses sort so you can use less commands to navigate the docs easier
+
+### Commands
+
+`/` + `searchWordHere` will search document for word
+
+`n` next
+
+`N` back
+
+`G` end of page
+
+`1G` beginning
+
+`control` + `F` forward a page
+
+`control` + `B` back a page
+
+## Grep
+
+can search through directories with
+`grep -ri wordI'mlookingfor text_files`
+
+### Grep flags
+`-n` line number
+
+`-i` ignore case
+
+`-r` recursively
+
+example ` grep -n rose sonnets.txt`
 
 ## Creating files on the command line
 
@@ -56,6 +109,25 @@ echo "It's the questions we can't answer that teach us the most. They teach us h
 - the `>` takes the string output from `echo` and redirects the content to a file called `theWiseManFear_1.txt`
 
 `>>` append operator
+
+
+
+
+## Curl!
+Curl can do a LOT will need to investigate more
+
+-`curl` allows us to interact with a URL in the command line and so much more!
+
+
+### Curl Flags
+
+`-I` Fetch the headers only! HTTP-servers feature the
+              command  HEAD which this uses to get nothing but the header of a
+              document. When used on an FTP or FILE file,  curl  displays  the
+              file size and last modification time only.
+## Resources
+
+
 
 ## Random
 
